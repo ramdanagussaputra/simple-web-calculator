@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src="storage.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Web Calculator</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="calculator">
+        <section class="display">
+          <p class="display-operator"></p>
+          <p class="display-number"></p>
+        </section>
+
+        <section class="calc-btn">
+          <button class="btn btn--num">7</button>
+          <button class="btn btn--num">8</button>
+          <button class="btn btn--num">9</button>
+
+          <button class="btn btn--change-value">+/-</button>
+
+          <button class="btn btn--num">4</button>
+          <button class="btn btn--num">5</button>
+          <button class="btn btn--num">6</button>
+
+          <button class="btn btn--operation">-</button>
+
+          <button class="btn btn--num">1</button>
+          <button class="btn btn--num">2</button>
+          <button class="btn btn--num">3</button>
+
+          <button class="btn btn--operation">+</button>
+
+          <button class="btn btn--clear">CE</button>
+          <button class="btn btn--num">0</button>
+
+          <button class="btn btn--equal">=</button>
+        </section>
+      </div>
+    </div>
+
+    <div class="card">
+      <section class="history">
+        <div class="history-label">
+          <h2 class="history-title">Calculation history</h2>
+          <button class="history-clear">Clear history</button>
+        </div>
+
+        <table class="history-table">
+          <thead class="table-head">
+            <tr>
+              <td>First Number</td>
+              <td>Operator</td>
+              <td>Second Number</td>
+              <td>Result</td>
+            </tr>
+          </thead>
+
+          <tbody class="table-body"></tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
